@@ -2,6 +2,8 @@
 
 A unified, local autonomous browser agent built on **browser-use**, **Playwright**, and **FastMCP**. It connects directly to your local **Brave**, **Google Chrome**, **Microsoft Edge**, or **Playwright Chromium** browser in non-headless (visible) mode, orchestrates multi-tab operations, supports human-in-the-loop tasks (solving CAPTCHAs, 2FA, OTPs), and exposes both a standalone CLI and an MCP Server.
 
+![Autonomous Browser Agent Dashboard Preview](assets/preview.png)
+
 ---
 
 ## 🌟 Key Features
@@ -22,12 +24,14 @@ A unified, local autonomous browser agent built on **browser-use**, **Playwright
 
 ```
 ai/
+├── assets/
+│   └── preview.png           # Dashboard UI preview screenshot
 ├── start_ui.bat              # One-click desktop launcher for the Web GUI
 ├── gui.py                    # FastAPI modern Web GUI with real-time SSE streaming
 ├── run_task.py               # Standalone CLI interface
 ├── test_agent.py             # Self-test script (Headed/Multi-tab/Stealth)
 ├── .env.example              # Environment variables template
-├── .env                      # Local configuration file (API keys, browser prefs)
+├── LICENSE                   # Open-source MIT License
 ├── requirements.txt          # Python dependencies
 ├── pyproject.toml            # Modern project packaging specification
 ├── README.md                 # Project documentation and MCP setup guide
