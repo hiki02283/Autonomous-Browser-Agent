@@ -208,3 +208,20 @@ The agent exposes standard MCP tools for integration into MCP client ecosystems 
 
 - **Visible Interaction**: When CAPTCHAs (Cloudflare, reCAPTCHA, Turnstile) or 2FA codes are encountered, the agent triggers the `request_human_help` controller action. The terminal displays a highlighted alert and pauses execution so you can solve it directly in the open browser window.
 - **Multi-Tab Actions**: The custom controller registers `open_new_tab`, `list_open_tabs`, and `switch_tab_by_keyword`, giving the LLM native awareness of multiple concurrent tabs.
+
+---
+
+## 🙏 Credits & Acknowledgements
+
+This project is built on the shoulders of incredible open-source tools and libraries:
+
+- **[browser-use](https://github.com/browser-use/browser-use)** — An exceptional browser automation library designed specifically for AI agents, created by Gregor Zetsche and the browser-use team. It powers the core perception, vision DOM extraction, and autonomous agent loops.
+- **[Playwright](https://github.com/microsoft/playwright)** — Microsoft's robust, lightning-fast cross-browser automation framework that controls the local browser instance (Brave, Chrome, Edge, Chromium) in non-headless mode.
+- **[FastMCP](https://github.com/jlowin/fastmcp)** — The high-performance Python framework for building Model Context Protocol servers.
+- **[FastAPI](https://fastapi.tiangolo.com/)** & **[Tailwind CSS](https://tailwindcss.com/)** — Driving the lightweight, responsive local web dashboard.
+
+---
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE). Built with ❤️ by [hiki](https://github.com/hiki02283).
