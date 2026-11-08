@@ -50,7 +50,7 @@ ai/
 ## 🖥️ Launching the Web GUI
 
 ### Option 1: Double-Click Desktop Launcher
-Simply double-click **[`start_ui.bat`](file:///c:/Users/hiki/Downloads/ai/start_ui.bat)** in Windows Explorer. It activates `.venv`, starts the server, and automatically opens your default browser at `http://localhost:8000`.
+Simply double-click **`start_ui.bat`** in Windows Explorer. It activates `.venv`, starts the server, and automatically opens your default browser at `http://localhost:8000`.
 
 ### Option 2: Command Line
 ```powershell
@@ -193,9 +193,9 @@ The agent exposes standard MCP tools for integration into MCP client ecosystems 
 {
   "mcpServers": {
     "local-browser-agent": {
-      "command": "c:\\Users\\hiki\\Downloads\\ai\\.venv\\Scripts\\python.exe",
+      "command": "C:\\Users\\<username>\\path\\to\\Autonomous-Browser-Agent\\.venv\\Scripts\\python.exe",
       "args": [
-        "c:\\Users\\hiki\\Downloads\\ai\\src\\mcp_server.py"
+        "C:\\Users\\<username>\\path\\to\\Autonomous-Browser-Agent\\src\\mcp_server.py"
       ],
       "env": {
         "GOOGLE_API_KEY": "your_api_key_here",
