@@ -1,0 +1,40 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# Sensitive Secrets & Keys (NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Playwright & Browser user data / downloads
+.playwright/
+test-results/
+playwright-report/
+playwright/.cache/
+user_data/
+
+# OS & Editor specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/

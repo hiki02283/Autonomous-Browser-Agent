@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-browser-agent"
+version = "0.1.0"
+description = "Unified local autonomous browser agent using browser-use, Playwright, and FastMCP"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Developer" }
+]
+dependencies = [
+    "browser-use>=0.13.0",
+    "playwright>=1.40.0",
+    "fastmcp>=4.1.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-openai>=0.2.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "psutil>=5.9.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+browser-mcp = "src.mcp_server:main"
+browser-task = "run_task:main"
+browser-ui = "gui:main"
